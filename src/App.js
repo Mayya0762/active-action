@@ -11,7 +11,7 @@ import video from './relax.mp4';
   
   
   const fetchTips = async () => {
-  const response = await fetch("http://www.boredapi.com/api/activity/");
+  const response = await fetch("https://www.boredapi.com/api/activity/");
   const data = await response.json();
 console.log(data)
    setTips(data.activity);
